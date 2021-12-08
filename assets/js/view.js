@@ -1,6 +1,9 @@
+//Renders the table
 function renderTable(container, people) {
+    //Clear the previous rendering of the table from the DOM
     $('#my-table').remove() 
 
+    //Append the initial table header
     container.append(
         `<table id='my-table'>
             <tr>
@@ -13,7 +16,10 @@ function renderTable(container, people) {
             </tr>
          </table>`
     )
-
+    
+    //Loop through the visitors in the visitors array and concatenate
+    //their name and address together, save them as variables and append
+    //those variables to the table
     for (let i in people) {
         let fullName = `${people[i].firstName} ${people[i].lastName}`
         let fullAddress = `${people[i].address}\n${people[i].city}, ${people[i].state} ${people[i].zip}`
@@ -26,11 +32,10 @@ function renderTable(container, people) {
                 <td id="id">${id}</td>
                 <td>${fullName}</td>
                 <td>${fullAddress}</td>
-                <td>${email}</td>
                 <td>${phone}</td>
+                <td>${email}</td>
                 <td>
                     <a href="#" onclick="modelDeleteVisitor(${id})"><i class="fas fa-trash"></i></a>
-                    <a href="#" onclick="modelEditVisitor(${id})"><i class="fas fa-edit"></i></a>
                 </td>
             </tr>`
         )
@@ -38,6 +43,7 @@ function renderTable(container, people) {
     }
 }
 
+//Show the table
 function showVisitors() {
     $('#visitor-container').toggleClass('active')
     $('#form-close').toggleClass('active');
@@ -45,16 +51,19 @@ function showVisitors() {
     $('#menu-icon').toggleClass('hide');
 }
 
+//Show the table
 function showList() {
     $('#whole-form-container').hide()
     $('#visitor-list-container').show()
 }
 
+//Show the new visitor form
 function showForm() {
     $('#whole-form-container').show()
     $('#visitor-list-container').hide()
 }
 
+//Clear the form
 function clearForm() {
     $('input').val("");
     $('textarea').val("");
@@ -63,6 +72,7 @@ function clearForm() {
     $('#submit').val("Submit")
 }
 
+//function when the user closes the form
 function closeForm() {
     $('#visitor-container').toggleClass('active');
     $('#form-close').toggleClass('active');

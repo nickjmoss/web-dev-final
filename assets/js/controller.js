@@ -1,3 +1,4 @@
+//Document ready function
 $(function() {
     // Menu button function, opens the menu for mobile
     $('#menu-icon').click(function() {
@@ -47,16 +48,9 @@ $(function() {
         }
     });
 
-    $('#delete').click(function() {
-        
-        modelDeleteVisitor()
-    })
-
-    //Function to loadVisitors
-    // function loadVisitors() {
-    //     continue;
-    // }
 });
+
+//Function that gets the values of the form on submit
 function submitForm(){
     let $inputs = $('form :input');
     let values = []

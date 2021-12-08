@@ -45,7 +45,7 @@ function initValidation(formName) {
             } 
             else {
             // Form passed all validation
-            // Hide form and display thank you message
+            // call submitForm from the controller to handle input values
                 submitForm();
                 $('#referral').attr('class', '');
             }
