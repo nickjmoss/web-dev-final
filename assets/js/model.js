@@ -15,20 +15,7 @@ class Visitor {
 }
 
 //Array of visitor objects
-let visitors = [
-    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
-    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
-    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
-    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
-    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
-    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
-    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
-    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
-    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
-    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
-    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
-    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005)
-]
+let visitors = [];
 
 //Adds visitor to the visitors array
 function modelAddVisitor(visitorArray) {

@@ -186,17 +186,55 @@ input {
     background-color: rgb(90, 36, 114);
 }
 
-
-
 /* -------------------------------- */
+
+#visitor-container {
+    background-image: url("../images/dark-mode-background.svg");
+}
+
+#visitor-list-container {
+    background-image: linear-gradient(to bottom right, #5f0a87, #a4508b)
+}
+
+.form-group2 {
+    background-image: linear-gradient(to bottom right, #8b939a, #5b6467)
+}
+
+input {
+    background-color: transparent;
+}
+
+.go-back {
+    color:#2b2482;
+}
+
+#new-visitor-button {
+    border: 1px solid #2b2482;
+    background-color: #2b2482;
+}
+
+
 @media only screen and (max-width: 768px) {
     .form-modal {
-        background-image: none;
-        background-color: black;
+        background-image: linear-gradient(to bottom right, #8b939a, #5b6467)
     }
 
     .form-container {
         width: 100%;
+    }
+
+    .form-group2 {
+        background-image: none;
+        background-color: transparent;
+    }
+
+    #visitor-list-container {
+        background-image: none;
+        background-color: transparent;
+    }
+
+    #visitor-container {
+        background-image: linear-gradient(to bottom right, #5f0a87, #a4508b);
     }
 }
 

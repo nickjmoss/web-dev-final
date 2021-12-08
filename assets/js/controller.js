@@ -22,8 +22,13 @@ $(function() {
 
     // Function that happens when the form is closed
     $('#go-back').click(function() {
-        showList();
-        clearForm();
+        if (confirm("Leave this form? You're changes will not be saved.")) {
+            showList();
+            clearForm();
+        }
+        else {
+            //do nothing
+        }
     });
 
     $('#new-visitor-button').click(function() {
