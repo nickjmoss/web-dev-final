@@ -19,6 +19,14 @@ let visitors = [
     new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
     new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
     new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
+    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
+    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
+    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
+    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
+    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
+    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
+    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
+    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005),
     new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'address', 'sandy', 'UT', 84005)
 ]
 
