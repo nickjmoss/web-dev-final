@@ -46,9 +46,8 @@ function initValidation(formName) {
             else {
             // Form passed all validation
             // Hide form and display thank you message
+                submitForm();
                 $('#referral').attr('class', '');
-                $(".form-group2").hide()
-                $(".thanks-message").show();
             }
         }
     });

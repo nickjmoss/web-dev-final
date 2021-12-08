@@ -324,7 +324,7 @@ footer {
 
 /* Form Styling */
 .form-modal {
-    display: none;
+    display: flex;
     position: fixed;
     background-image: url("../images/background.svg");
     background-repeat: no-repeat;
@@ -339,10 +339,6 @@ footer {
     justify-content: center;
     z-index: 1;
     right: 0;
-}
-
-.form-modal.active {
-    display: flex;
 }
 
 .form-close {
@@ -373,6 +369,44 @@ footer {
     height: 80%;
     width: 50%;
 }
+
+#visitor-container {
+    display: none;
+    position: fixed;
+    background-image: url("../images/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+    z-index: 1;
+    right: 0;
+}
+#visitor-container.active {
+    display: flex;
+}
+
+#whole-form-container {
+    display: none;
+}
+
+#visitor-list-container {
+    width: 100%;
+    padding: 5%;
+    overflow: auto;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 
 .thanks-message {
     display: none;
@@ -493,6 +527,16 @@ form p {
     opacity: 0.9;
 }
 
+.go-back {
+    cursor: pointer;
+    color:#0321c4;
+    font-size: .95rem;
+}
+
+.go-back:hover {
+    opacity: 0.7;
+}
+
 input ~ div.errMsg {
     display:none;
 }
@@ -501,6 +545,16 @@ input.invalid ~ div.errMsg {
     display: flex;
     font-size: 0.75rem;
     color: red;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.fa-trash, .fa-edit {
+    cursor: pointer;
+    color: #0321c4;
+    padding: 5px;
 }
 
 
@@ -924,7 +978,7 @@ svg {
     }
 
     .back {
-        order: 1px solid #0321c4;
+        border: 1px solid #0321c4;
         background-color: #0321c4;
         border-radius: 30px;
         padding: 5% 5%;
