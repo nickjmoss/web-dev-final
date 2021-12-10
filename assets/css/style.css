@@ -338,7 +338,7 @@ footer {
     display: none;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 8% 1%;
     z-index: 2;
 }
 
@@ -390,7 +390,7 @@ footer {
 
 #visitor-list-container {
     width: 75%;
-    height: 60%;
+    height: 75%;
     padding: 1% 5% 5% 5%;
     overflow: auto;
     background-image: linear-gradient(to bottom right, blue, cyan);
@@ -553,6 +553,7 @@ table, th, td {
     display: flex;
     justify-content: left;
     overflow-x: auto;
+    margin-bottom: 1%;
 }
 
 table {
@@ -561,12 +562,21 @@ table {
 
 td {
     text-align: center;
-    padding: 2% 2% 0 2%;
+    padding: 1% 1% 1% 1%;
 }
 
 td, th {
     min-width: 150px;
 }
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+tr:nth-child(1):hover {
+    background-color: transparent;
+}
+
 
 table td:nth-child(1), th:nth-child(1) {
     display:none;
@@ -591,6 +601,11 @@ table td:nth-child(1), th:nth-child(1) {
     font-size: 1.0rem;
     margin: auto;
     padding: 1%;
+}
+
+#list-buttons-container {
+    display: flex;
+    flex-direction: row;
 }
 
 #new-visitor-button span {

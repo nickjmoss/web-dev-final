@@ -14,7 +14,7 @@ $(function() {
     });
 
     // Function that happens when the form is closed
-    $('#form-close').click(function() {
+    $('.new-form-close').click(function() {
         clearForm();
         closeForm();
         showList();
