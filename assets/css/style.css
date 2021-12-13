@@ -375,13 +375,15 @@ footer {
     left: 0;
     top: 0;
     overflow: hidden;
-    transition: all 0.3s ease-in-out;
+    transition: opacity 2s;
     justify-content: center;
     z-index: 1;
     right: 0;
+    opacity: 0;
 }
 #visitor-container.active {
     display: flex;
+    opacity: 1;
 }
 
 #whole-form-container {
@@ -400,7 +402,6 @@ footer {
     margin: 0 auto;
     max-width: 1000px;
 }
-
 
 .thanks-message {
     display: none;
@@ -550,7 +551,6 @@ table, th, td {
 
 #table {
     padding: 0 0 5% 0;
-    display: flex;
     justify-content: left;
     overflow-x: auto;
     margin-bottom: 1%;
@@ -581,6 +581,7 @@ tr:nth-child(1):hover {
 table td:nth-child(1), th:nth-child(1) {
     display:none;
 }
+
 
 .table-heading {
     display: flex;

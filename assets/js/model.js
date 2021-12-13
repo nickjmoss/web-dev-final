@@ -15,7 +15,13 @@ class Visitor {
 }
 
 //Array of visitor objects
-let visitors = [];
+let visitors = [
+    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'Address', 'Sandy', 'UT', 84005),
+    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'Address', 'Sandy', 'UT', 84005),
+    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'Address', 'Sandy', 'UT', 84005),
+    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'Address', 'Sandy', 'UT', 84005),
+    new Visitor(0, 'Nick', 'Moss', 3853377511, 'nick@me.com', 'Address', 'Sandy', 'UT', 84005)
+];
 
 //Adds visitor to the visitors array
 function modelAddVisitor(visitorArray) {
